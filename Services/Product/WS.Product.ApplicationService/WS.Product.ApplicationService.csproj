@@ -7,9 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\shared\WS.Constant\WS.Constant.csproj" />
     <ProjectReference Include="..\..\shared\WS.Shared.ApplicationService\WS.Shared.ApplicationService.csproj" />
     <ProjectReference Include="..\WS.Product.Dtos\WS.Product.Dtos.csproj" />
     <ProjectReference Include="..\WS.Product.Infrastructure\WS.Product.Infrastructure.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 </Project>

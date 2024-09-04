@@ -1,4 +1,6 @@
 
+using WS.Product.ApplicationService.Startup;
+using WS.Auth.ApplicationService.Startup;
 namespace WS.WebAPI
 {
     public class Program
@@ -13,7 +15,8 @@ namespace WS.WebAPI
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.ConfigureAuth(typeof(Program).Namespace);
+            builder.ConfigureProduct(typeof(Program).Namespace);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
