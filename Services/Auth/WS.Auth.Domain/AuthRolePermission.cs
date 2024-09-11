@@ -9,16 +9,14 @@ using WS.Constant.Database;
 
 namespace WS.Auth.Domain
 {
-    [Table(nameof(AuthCustomerAddress), Schema = DbSchema.Auth)]
-    public class AuthCustomerAddress
+    [Table(nameof(AuthRolePermission), Schema = DbSchema.Auth)]
+    public class AuthRolePermission
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public int CustomerId { get; set; }
-        [MaxLength(100)]
-        public string Address { get; set; }
-        [MaxLength(100)]
-        public string IsDefault { get; set; }
+        public int RoleId { get; set; }
+        [MaxLength(50)]
+        public string PermissionKey {  get; set; }
     }
 }

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WS.Constant.Database;
+using WS.Product.ApplicationService.ProductManagerModule.Abstracts;
+using WS.Product.ApplicationService.ProductManagerModule.Implements;
 using WS.Product.Infrastructure;
 
 namespace WS.Product.ApplicationService.Startup
@@ -30,11 +32,10 @@ namespace WS.Product.ApplicationService.Startup
                             );
                         }
                     );
-                },
-                ServiceLifetime.Scoped
+                }
             );
 
-            //builder.Services.AddScoped<>
+            builder.Services.AddScoped<IProductService, ProductService>();
         }
     }
 }

@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\shared\WS.Shared.ApplicationService\WS.Shared.ApplicationService.csproj" />
     <ProjectReference Include="..\WS.Order.Dtos\WS.Order.Dtos.csproj" />
     <ProjectReference Include="..\WS.Order.Infrastructure\WS.Order.Infrastructure.csproj" />

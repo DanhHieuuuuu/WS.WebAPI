@@ -45,13 +45,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Product.Domain", "Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Product.Dtos", "Services\Product\WS.Product.Dtos\WS.Product.Dtos.csproj", "{56D58616-51BB-4869-9440-5CC584FCE311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.Shared.ApplicationService", "Services\shared\WS.Shared.ApplicationService\WS.Shared.ApplicationService.csproj", "{4DAC0A2F-EFFA-4855-AD89-FBCA2F4C0F09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Shared.ApplicationService", "Services\shared\WS.Shared.ApplicationService\WS.Shared.ApplicationService.csproj", "{4DAC0A2F-EFFA-4855-AD89-FBCA2F4C0F09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.Order.ApplicationService", "Services\Order\WS.Order.ApplicationService\WS.Order.ApplicationService.csproj", "{3BF95929-7D98-46D7-9D5B-75E60FCFE363}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Order.ApplicationService", "Services\Order\WS.Order.ApplicationService\WS.Order.ApplicationService.csproj", "{3BF95929-7D98-46D7-9D5B-75E60FCFE363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.Product.ApplicationService", "Services\Product\WS.Product.ApplicationService\WS.Product.ApplicationService.csproj", "{DDD17443-7BDD-44EB-A6F5-095BD5A1A10B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Product.ApplicationService", "Services\Product\WS.Product.ApplicationService\WS.Product.ApplicationService.csproj", "{DDD17443-7BDD-44EB-A6F5-095BD5A1A10B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.Constant", "Services\shared\WS.Constant\WS.Constant.csproj", "{81C93FDC-D6A2-4C43-A9A1-91A78DBD7C38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Constant", "Services\shared\WS.Constant\WS.Constant.csproj", "{81C93FDC-D6A2-4C43-A9A1-91A78DBD7C38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
