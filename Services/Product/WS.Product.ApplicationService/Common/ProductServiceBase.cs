@@ -16,7 +16,7 @@ namespace WS.Product.ApplicationService.Common
         protected ProductServiceBase(ILogger logger, ProductDbContext dbContext)
         {
             _logger = logger;
-            dbContext = _dbContext;
+             _dbContext = dbContext;
         }
     }
 }

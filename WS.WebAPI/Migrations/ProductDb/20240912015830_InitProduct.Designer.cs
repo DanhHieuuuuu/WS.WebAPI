@@ -11,7 +11,7 @@ using WS.Product.Infrastructure;
 namespace WS.WebAPI.Migrations.ProductDb
 {
     [DbContext(typeof(ProductDbContext))]
-    [Migration("20240911082824_InitProduct")]
+    [Migration("20240912015830_InitProduct")]
     partial class InitProduct
     {
         /// <inheritdoc />
@@ -49,6 +49,9 @@ namespace WS.WebAPI.Migrations.ProductDb
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
