@@ -7,18 +7,20 @@ using System.Text;
 using System.Threading.Tasks;
 using WS.Constant.Database;
 
-namespace WS.Product.Domain
+namespace WS.Order.Domain
 {
-    [Table(nameof(ProdProductCategory), Schema = DbSchema.Product)]
-
-    public class ProdProductCategory
+    [Table(nameof(OrderDetail), Schema = DbSchema.Order)]
+    public class OrderDetail
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        public int OrderId { get; set; }
         public int ProductId { get; set; }
-        public int CategoryId { get; set; }
+        public int Quantity { get; set; }
+        public int UnitPrice { get; set; }
 
-        //public OrderOrder orderOrder { get; set; }
+        public OrderOrder Order { get; set; }
+
     }
 }

@@ -7,10 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Product\WS.Product.Domain\WS.Product.Domain.csproj" />
+    <ProjectReference Include="..\..\Product\WS.Product.Dtos\WS.Product.Dtos.csproj" />
+    <ProjectReference Include="..\..\Product\WS.Product.Infrastructure\WS.Product.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

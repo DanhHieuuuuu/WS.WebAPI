@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WS.Product.ApplicationService.ProductManagerModule.Abstracts;
 using WS.Product.Dtos.ProductManagerModule;
-using WS.Product.Dtos.ProductManagerModule.Common;
+using WS.Shared.ApplicationService.Common;
 
 namespace WS.WebAPI.Controllers.Product
 {
@@ -44,20 +44,20 @@ namespace WS.WebAPI.Controllers.Product
         {
             try
             {
-                _productService.DeleteProduct(id);
-                return Ok();
+                
+                return Ok(_productService.DeleteProduct(id));
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
-        [HttpGet("/Get-All")]
-        public IActionResult GetAllProduct([FromQuery] FilterDtos input3) 
+        [HttpGet("/Get-All-2")]
+        public IActionResult GetAllProduct2([FromQuery] FilterDtos input4)
         {
             try
             {
-                return Ok(_productService.GetAll(input3));
+                return Ok(_productService.GetAllProduct(input4));
             }
             catch (Exception ex)
             {

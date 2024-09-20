@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WS.Product.Dtos.ProductManagerModule.Common
+namespace WS.Shared.ApplicationService.Common
 {
     public class FilterDtos
     {

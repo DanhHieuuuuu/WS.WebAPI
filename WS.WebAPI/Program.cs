@@ -1,6 +1,7 @@
 
 using WS.Product.ApplicationService.Startup;
 using WS.Auth.ApplicationService.Startup;
+using WS.Order.ApplicationService.Startup;
 namespace WS.WebAPI
 {
     public class Program
@@ -17,6 +18,7 @@ namespace WS.WebAPI
             builder.Services.AddSwaggerGen();
             builder.ConfigureAuth(typeof(Program).Namespace);
             builder.ConfigureProduct(typeof(Program).Namespace);
+            builder.ConfigureOrder(typeof(Program).Namespace);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

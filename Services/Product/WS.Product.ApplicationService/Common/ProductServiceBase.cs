@@ -11,12 +11,12 @@ namespace WS.Product.ApplicationService.Common
     public abstract class ProductServiceBase
     {
         protected readonly ILogger _logger;
-        protected readonly ProductDbContext _dbContext;
+        protected readonly ProductDbContext _productDbContext;
 
-        protected ProductServiceBase(ILogger logger, ProductDbContext dbContext)
+        protected ProductServiceBase(ILogger logger, ProductDbContext productDbContext)
         {
             _logger = logger;
-             _dbContext = dbContext;
+             _productDbContext = productDbContext;
         }
     }
 }

@@ -11,6 +11,7 @@ using WS.Constant.Database;
 using WS.Product.ApplicationService.ProductManagerModule.Abstracts;
 using WS.Product.ApplicationService.ProductManagerModule.Implements;
 using WS.Product.Infrastructure;
+using WS.Shared.ApplicationService.Product;
 
 namespace WS.Product.ApplicationService.Startup
 {
@@ -36,6 +37,7 @@ namespace WS.Product.ApplicationService.Startup
             );
 
             builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IProductInfService, ProductInfService>();
         }
     }
 }
