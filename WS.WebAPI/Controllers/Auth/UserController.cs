@@ -13,5 +13,10 @@ namespace WS.WebAPI.Controllers.Auth
         {
             _userService = userService;
         }
+        [HttpGet("/test")]
+        public IActionResult Get()
+        {
+            return Ok("hello");
+        }
     }
 }
