@@ -5,8 +5,6 @@ using WS.Order.ApplicationService.OrderManagerModule.Abstracts;
 using WS.Order.Domain;
 using WS.Order.Dtos.OrderManagerModule;
 using WS.Order.Infrastructure;
-using WS.Product.Domain;
-using WS.Product.Infrastructure;
 using WS.Shared.ApplicationService.Common;
 using WS.Shared.ApplicationService.Product;
 using WS.Shared.ApplicationService.UserException;
