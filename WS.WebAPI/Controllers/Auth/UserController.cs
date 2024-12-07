@@ -16,7 +16,7 @@ namespace WS.WebAPI.Controllers.Auth
         [HttpGet("/test")]
         public IActionResult Get()
         {
-            return Ok("hello word");
+            return Ok("hello word 2");
         }
     }
 }
