@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'docker build -t my-app ./WS.WebAPI'
+                bat 'docker build -t my-app ./WS.WebAPI/WS.WebAPI'
             }
         }
         stage('Deploy') {
